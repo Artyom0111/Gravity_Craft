@@ -1,3 +1,4 @@
+
 import pygame
 import unittest
 
@@ -35,7 +36,7 @@ class EndPoint:
 
 class Background:
     def __init__(self):
-        self.image = None  # Замените на вашу текстуру фона
+        self.image = None 
 
     def load_image(self, image_path):
         self.image = pygame.image.load(image_path)
@@ -86,7 +87,7 @@ class TestGameObjects(unittest.TestCase):
 
     def test_background_load_image(self):
         self.background.load_image("assets/images/Ustena2.0.png")
-        self.assertIsNotNone(self.background.image)  # Проверка, что изображение загружено
+        self.assertIsNotNone(self.background.image) 
 
     def tearDown(self):
         pygame.quit()
